@@ -33,11 +33,30 @@
         
     }
     a{
-        color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif
     }
     h1{
         font-size: 70px;
     }
+    button{
+        color: rgb(14, 106, 226);
+        background-color: rgb(255, 255, 255);
+        /* border: 5px;
+        border-color: black; */
+    }
+    h2{
+        padding: 0px 10px 0px 10px;
+    }
+    p{
+        padding: 0px 10px 0px 10px;
+    }
+    button{
+        margin: 0px 10px 0px 10px;
+        /* 用padding是按鈕內框變大 */
+    }
+
+
     @media (max-width: 500px){
         h1{
             font-size: 35px;
@@ -69,9 +88,17 @@
     <h2>Romantic Love Poetry for Him and Her</h2>
     <p>Romance is the language of love. It is the way that you show your partner that you care about them. Every person has their own idea of what they might consider romantic. For some it will be dressing up for the other or buying flowers or jewelry. There is no way to know what is romantic without knowing the person. Romance is created by the feeling that you are genuinely cared about. All romance has one thing in common; it must show the other person that you care enough to find out what is meaningful to them.</p>
     
+    <h3>test</h3>
 
     <script>
-        alert("javascript is on")
+        $("button").on("click", function(){
+            alert("clicked!")
+        // 選擇button元素，用on監聽，click是事件，alert...是監聽到了之後要做...
+        });
+        $("h3").on("click", function(){
+            alert("h3 was clicked on!")
+        // 選擇button元素，用on監聽，click是事件，alert...是監聽到了之後要做...
+        });
 
     </script>    
 </body>
